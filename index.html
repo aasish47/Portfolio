@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aasish Kumar Sahoo - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img class="picZoom" src="https://media.licdn.com/dms/image/D5603AQGCM1dhlY-kig/profile-displayphoto-shrink_400_400/0/1689092884687?e=1695254400&v=beta&t=kFAN1hG2ySnpuVCRq-pFcRC0X6L9_Tdc7pueqbM9PwU" alt="Aasish Kumar Sahoo" onclick="openImage('https://media.licdn.com/dms/image/D5603AQGCM1dhlY-kig/profile-displayphoto-shrink_400_400/0/1689092884687?e=1695254400&v=beta&t=kFAN1hG2ySnpuVCRq-pFcRC0X6L9_Tdc7pueqbM9PwU')">
+        <h1><span id="nameAnimation"></span></h1>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                <h1>Aasish Kumar Sahoo <span>(He/Him)</span></h1>
+                <p>
+                    I am a passionate <strong>Computer Science and Engineering</strong> undergraduate student at <strong>SOA University</strong> (Class of 2025). My journey in the world of technology revolves around my love for <strong>Java</strong> programming and my expertise as a <strong>Front-End Web Developer</strong>.
+                </p>
+                <p>
+                    My enthusiasm for web development is evident in my proficiency with <strong>JavaScript</strong>, <strong>CSS</strong>, and <strong>HTML</strong>, where I strive to create visually appealing and interactive experiences. I am driven by a constant desire to learn, explore, and contribute to innovative projects.
+                </p>
+                <p>
+                    As a tech enthusiast, I frequently engage in discussions on <strong>#js</strong>, <strong>#css</strong>, <strong>#html</strong>, <strong>#java</strong>, and <strong>#javascript</strong>. I enjoy exchanging ideas and insights with like-minded individuals, further nurturing my knowledge and skills.
+                </p>
+                <p>
+                    During my internship at <strong>Ascent Academy</strong> (Feb-Mar), I had the opportunity to apply my learning in a real-world setting, honing my problem-solving abilities and gaining practical experience.
+                </p>
+                <p>
+                    I am currently pursuing my academic journey at <strong>Siksha 'O' Anusandhan University</strong> in Bhubaneswar, Odisha, India. My goal is to make meaningful contributions to the tech industry and create solutions that positively impact people's lives.
+                </p>
+                <p>
+                    I am excited about embracing new challenges and am open to opportunities that allow me to grow both personally and professionally. I look forward to collaborating with diverse teams and taking part in projects that push the boundaries of technology.
+                </p>
+            </p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li> <b>Programming Languages:</b> Java, Python</li>
+                <li> <b>Web Development:</b> HTML, CSS, JavaScript</li>
+                <li> <b>Frameworks:</b> Flask </li>
+                <li> <b>Database:</b> mySQL, pHp</li>
+                <li> <b>Version Control:</b> Git, GitHub</li>
+                <li> <b>Problem Solving</b></li>
+                <li> <b>Teamwork and Collaboration</b></li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Notes Site for College Students</h3>
+                <p>
+                    The Notes site is a user-friendly web application designed to provide students in our college with easy access to
+                    course-related notes and study materials. It features a clean and visually appealing interface with subject-wise
+                    sections, allowing students to navigate and find resources effortlessly. The homepage showcases subjects with a
+                    carousel slider. The site is mobile-responsive and can be accessed from various devices. Although not active
+                    currently, it has the potential* to integrate with a MySQL database for structured data management. Students can also
+                    find external resource links for further study materials. Overall, the Notes site aims to enhance the learning
+                    experience by offering a centralized platform for course resources.
+                </p>
+                <p>Source Code: <a href="https://github.com/aasish47/4thSem-Notes" target="_blank">GitHub Repository</a></p>
+                <p>Visit Site : <a href="https://aasish47.github.io/4thSem-Notes/" target="_blank">Deployed Site</a></p>
+
+            </div>
+
+            <div class="project">
+                <h3>Anime Review Site</h3>
+                <p>
+                    The Anime Reviews site is a captivating web platform that offers insightful reviews and information about popular anime series. With a visually appealing interface, the site showcases an array of well-known anime titles, such as Naruto, One Piece, Bleach, Death Note, Jujutsu Kaisen, and Classroom of the Elite. Each review provides a brief overview of the series, its plot, and the main characters, allowing anime enthusiasts to make informed choices about what to watch next. The site aims to serve as a valuable resource for anime lovers, helping them explore and discover exciting new shows within the vast anime universe. Whether you're a seasoned anime fan or just starting your anime journey, the Anime Reviews site promises an enjoyable and informative experience.
+
+                </p>
+
+                <p>Source Code:  <a href="https://github.com/yourusername/project2" target="_blank">GitHub Repository</a></p>
+                <p>Visit Site : <a href="https://aasish47.github.io/animeReview/" target="_blank">Deployed Site</a></p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email: <b> aasish6001@gmail.com</b></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/aasish47" target="_blank">
+                <img class="picZoom" src="https://cdn.iconscout.com/icon/free/png-512/free-github-139-461797.png?f=avif&w=512" alt="GitHub">
+            </a>
+            <a href="https://www.linkedin.com/in/aasish-kumar-sahoo-aa0383221/" target="_blank">
+                <img class="picZoom" src="https://cdn.iconscout.com/icon/free/png-512/free-linkedin-160-461814.png?f=avif&w=512" alt="LinkedIn">
+            </a>
+        </div>
+    </footer>
+    <script>
+        // Smooth scroll effect for navigation links
+        const links = document.querySelectorAll('a[href^="#"]');
+        links.forEach(link => {
+            link.addEventListener('click', smoothScroll);
+        });
+
+        function smoothScroll(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            const startPosition = window.pageYOffset;
+            const targetPosition = target.getBoundingClientRect().top + startPosition;
+            const distance = targetPosition - startPosition;
+            const duration = 800;
+            let start = null;
+
+            function step(timestamp) {
+                if (!start) start = timestamp;
+                const progress = timestamp - start;
+                window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
+                if (progress < duration) {
+                    requestAnimationFrame(step);
+                }
+            }
+
+            function easeInOutCubic(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return c / 2 * t * t * t + b;
+                t -= 2;
+                return c / 2 * (t * t * t + 2) + b;
+            }
+
+            requestAnimationFrame(step);
+        }
+
+        // Trigger fade-in animation on scroll
+        const elements = document.querySelectorAll('.fade-in');
+        const options = {
+            threshold: 0.5,
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fadeIn');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        elements.forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+    <!-- Animating name -->
+    <script>
+        const nameAnimationElement = document.getElementById('nameAnimation');
+        const name = "Aasish Kumar Sahoo";
+        const words = name.split(' ');
+        let currentWordIndex = 0;
+        let isAnimating = false;
+        
+        function getRandomBrightColor() {
+            const brightness = 95 + Math.random() * 10; // Random brightness between 95% and 100%
+            return `hsl(0, 0%, ${brightness}%)`; // Hue and Saturation set to 0 for white and lightness for off-white
+        }
+        
+        function animateName() {
+            if (isAnimating || currentWordIndex === words.length) {
+                isAnimating = true;
+                nameAnimationElement.style.color = getRandomBrightColor();
+                setTimeout(() => {
+                    nameAnimationElement.innerHTML = '';
+                    isAnimating = false;
+                    currentWordIndex = 0;
+                    animateName();
+                }, 1000);
+                return;
+            }
+        
+            const currentWord = words[currentWordIndex];
+            let letterIndex = 0;
+        
+            const interval = setInterval(() => {
+                if (letterIndex === currentWord.length) {
+                    clearInterval(interval);
+                    nameAnimationElement.innerHTML = nameAnimationElement.innerHTML + ' ';
+                    currentWordIndex++;
+                    animateName();
+                } else {
+                    nameAnimationElement.innerHTML += currentWord[letterIndex];
+                    letterIndex++;
+                }
+            }, 100);
+        }
+        
+        animateName();
+        
+    </script>
+    
+    <!-- To open the profile photo -->
+    <script>
+        // JavaScript function to open the image in a larger view
+        function openImage(imageSrc) {
+            var overlay = document.createElement("div");
+            overlay.className = "overlay";
+            overlay.onclick = function() {
+                document.body.removeChild(overlay);
+            };
+    
+            var image = document.createElement("img");
+            image.src = imageSrc;
+            overlay.appendChild(image);
+    
+            document.body.appendChild(overlay);
+        }
+    </script>
+    
+</body>
+</html>
