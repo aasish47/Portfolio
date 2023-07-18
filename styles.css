@@ -288,3 +288,9 @@ body {
     border: 2px solid #fff;
     border-radius: 8px;
 }
+
+header,footer{
+    background-image: url("https://i.pinimg.com/564x/c8/b5/94/c8b594fb40e48b7a05bc3a8d85de366f.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
